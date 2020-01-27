@@ -1,0 +1,121 @@
+#posts {
+    .post {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        background: #fff;
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        }
+        border: {
+            radius: 5px;
+        }
+        .q-icon {
+            background: $themeColor;
+            width: 50px;
+            height: 50px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 100%;
+            padding: {
+                top: 3px;
+                left: 15px;
+            };
+            color: #fff;
+            font: {
+                family: verdana;
+                size: 25px;
+            }
+            opacity: 0.3;
+        }
+        .asked-by {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 45px;
+            .user-icon {
+                position: relative;
+                margin-left: 10px;
+                width: 45px;
+                height: 45px;
+                float: right;
+                img {
+                    border: {
+                        radius: 100%;
+                    };
+                    border: 1px solid #eee;
+                }
+                .time-ago {
+                    position: absolute;
+                    left: -111px;
+                    top: 40%;
+                    width: 100px;
+                    text-align: right;
+                    color: grey;
+                    font-size: 11px;
+                }
+            }
+        }
+        p {
+            font-size: 20px;
+            padding: {
+                bottom: 60px;
+                top: 10px;
+                left: 30px;
+                right: 30px;
+            } 
+        }
+        .post-pic-area {
+            .post-pic {
+                width: 100%;
+            }
+            padding-bottom: 60px;
+            margin-top: -70px;
+        }
+        .answer {
+            position: absolute;
+            bottom: 0;
+            width: 95%;
+            height: 50px;
+            margin: {
+                left: 2.5%;
+            }
+            border: {
+                top: 1px solid #eee;
+            };
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+            .post-event {
+                height: 40px;
+                margin: {
+                    top: 5px;
+                }
+                display: flex;
+                justify-content: center;
+                &:hover {
+                    background: #eee;
+                }
+                border: {
+                    radius: 30px;
+                }
+            }
+            .post-event-btn {
+                width: 100%;
+                height: 100%;
+                align: {
+                    self: center;
+                }
+                border: none;
+                font: {
+                    weight: bold;
+                }    
+                color: gray;
+                background: unset;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+#left {
+    margin: {
+        top: -10px;
+    }
+    height: 300px;
+    padding: 0;
+    .left-opts {
+        display: grid;
+        grid: {
+            template-columns: repeat(1, 1fr);
+            gap: 3px;
+        }
+        .left-opt {
+            width: 95%;
+            padding: 7px;
+            height: 50px;
+            color: #333;
+            border: 1px solid #eee {
+                radius: 5px;
+            }
+            font: {
+                weight: bold;
+            }
+            &:hover {
+                background: #fff;
+                border: 1px solid #eee;
+                & + .user-left {
+                    img {
+                        border: 2px solid $themeColor;
+                    }
+                }
+                & + i, .left-opt-text {
+                    color: $themeColor;
+                }
+            }
+            a {
+                height: 100%;
+                color: #333;
+                text-decoration: none;
+                i {
+                    font: {
+                        size: 27px;
+                    }
+                    margin: {
+                        top: 3px;
+                        left: 3px;
+                    }
+                }
+                .left-opt-text {
+                    font-size: 23px;
+                    margin: {
+                        left: 10px;
+                    };
+                }
+            }
+            .user-left {
+                img {
+                    width: 27px;
+                    height: 27px;
+                    border: {
+                        radius: 100%;
+                    }
+                    margin: {
+                        top: -10px;
+                    };
+                }  
+            }
+        }
+    }
+}
